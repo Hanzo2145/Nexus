@@ -2,6 +2,7 @@
 
 
 #include "Characters/NexusCharacterBase.h"
+#include "AttributeSet/NexusAttributeSet.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
@@ -12,9 +13,13 @@ ANexusCharacterBase::ANexusCharacterBase()
 	PrimaryActorTick.bCanEverTick = true;
 
 	// Add the ability system component
-	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>("AbilitySystemComponent");
+	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
 	AbilitySystemComponent->SetIsReplicated(true);
 	AbilitySystemComponent->SetReplicationMode(AscReplicationMode);
+
+	//Add Nexus Attribute Set
+	NexusAttributeSet = CreateDefaultSubobject<UNexusAttributeSet>("NexusAttributeSet");
+	
 
 	//Set Size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(35.0f, 90.f);

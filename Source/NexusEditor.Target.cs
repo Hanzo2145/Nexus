@@ -8,8 +8,12 @@ public class NexusEditorTarget : TargetRules
 	public NexusEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V5;
+        DefaultBuildSettings = BuildSettingsVersion.V5;   // use UE5.6 defaults
+        IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_6;
 
-		ExtraModuleNames.AddRange( new string[] { "Nexus" } );
+        CppStandard = CppStandardVersion.Cpp20;
+        bOverrideBuildEnvironment = true;
+
+        ExtraModuleNames.AddRange( new string[] { "Nexus" } );
 	}
 }

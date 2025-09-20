@@ -9,6 +9,8 @@
 #include "NexusCharacterBase.generated.h"
 
 
+class UNexusAbilitySystemComponent;
+class UNexusAttributeSet; 
 UCLASS()
 class NEXUS_API ANexusCharacterBase : public ACharacter, public IAbilitySystemInterface //Make sure to include this interface
 {
@@ -41,6 +43,9 @@ public:
 	// we are adding the ability System component to this character
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= "Ability System")
 	TObjectPtr<UAbilitySystemComponent>	AbilitySystemComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= "Ability System")
+	TObjectPtr<UNexusAttributeSet> NexusAttributeSet;
 
 protected:
 	virtual void BeginPlay() override;
