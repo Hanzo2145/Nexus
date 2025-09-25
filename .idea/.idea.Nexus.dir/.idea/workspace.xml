@@ -8,29 +8,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53e87513-ba40-4f1c-a4dd-c9db9e1f0914" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/Dash/GE_DashCooldown.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/Dash/GE_DashCost.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/Regen/GE_StatusStaminaRegen.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Nexus/Private/AttributeSet/NexusAttributeSet.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Nexus/Public/AttributeSet/NexusAttributeSet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditorPerProjectUserSettings.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/AbiltiyData/DT_AbilityMetaData.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/AbiltiyData/S_AbilityMetaData.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/WBP_AbilitiesContainer.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/WBP_Ability.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/WBP_EmptyAbility.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/WBP_PlayerHUD.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/WBP_PlayerVitals.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_Dash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_Dash.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayCues/GC_Dash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayCues/GC_Dash.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/VS/XX060WNO6GEZU5BZQCLZPP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/VS/XX060WNO6GEZU5BZQCLZPP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/F/4G/TYFCMQ9MC435YW6FZBF5FS.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/F/4G/TYFCMQ9MC435YW6FZBF5FS.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nexus.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Nexus.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Nexus.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus.Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Nexus/Private/Characters/NexusCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Private/Characters/NexusCharacterBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Nexus/Public/Characters/NexusCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Public/Characters/NexusCharacterBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/NexusEditor.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/NexusEditor.Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/0/XP/VRH8G2YFRSAQU352WWWH06.uasset" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +32,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/UMG/Public/Blueprint/UserWidget.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -74,7 +67,7 @@
         <option name="CONFIGURATION" value="DebugGame Editor" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="D:\Program Files\Epic Games\UE_5.6\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../Program Files/Epic Games/UE_5.6/Engine/Binaries/Win64/UnrealEditor-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;D:\UEProjects\Nexus\Nexus.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
         <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.6" />
@@ -87,7 +80,7 @@
         <option name="CONFIGURATION" value="DebugGame" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="D:\UEProjects\Nexus\Binaries\Win64\Nexus-Win64-DebugGame.exe" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Win64/Nexus-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
         <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.6" />
@@ -100,7 +93,7 @@
         <option name="CONFIGURATION" value="Development Editor" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="D:\Program Files\Epic Games\UE_5.6\Engine\Binaries\Win64\UnrealEditor.exe" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../Program Files/Epic Games/UE_5.6/Engine/Binaries/Win64/UnrealEditor.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;D:\UEProjects\Nexus\Nexus.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
         <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.6" />
@@ -113,7 +106,7 @@
         <option name="CONFIGURATION" value="Development" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="D:\UEProjects\Nexus\Binaries\Win64\Nexus.exe" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Win64/Nexus.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
         <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.6" />
@@ -126,7 +119,7 @@
         <option name="CONFIGURATION" value="Shipping" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="D:\UEProjects\Nexus\Binaries\Win64\Nexus-Win64-Shipping.exe" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Win64/Nexus-Win64-Shipping.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
         <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.6" />
@@ -152,6 +145,7 @@
       <updated>1758352736747</updated>
       <workItem from="1758352738137" duration="664000" />
       <workItem from="1758353690804" duration="2532000" />
+      <workItem from="1758771188764" duration="3831000" />
     </task>
     <servers />
   </component>
