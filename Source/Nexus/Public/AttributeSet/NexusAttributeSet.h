@@ -60,6 +60,14 @@ public:
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
+	//Applies Changes whenever an Attributes is chanaged manually not by and effect
+	virtual void PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue) override;
+
+	//this function is called after a game play effect is applied 
+	virtual void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data) override;
+
+
+	
 	UFUNCTION() void OnRep_Health(const FGameplayAttributeData& OldValue);
 	UFUNCTION() void OnRep_MaxHealth(const FGameplayAttributeData& OldValue);
 	UFUNCTION() void OnRep_Stamina(const FGameplayAttributeData& OldValue);
