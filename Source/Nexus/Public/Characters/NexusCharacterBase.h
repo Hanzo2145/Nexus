@@ -27,6 +27,16 @@ public:
 	virtual void PossessedBy(AController* NewController) override;
 	//and we set the same variables for the playing using the following functions
 	virtual void OnRep_PlayerState() override;
+	
+	//this function takes in TArray<TSubclassOf<UGameplayAbility>> as an input and returns a Tarray of Spec handle for these abilites.
+	UFUNCTION(BlueprintCallable, Category="Ability System")
+	TArray<FGameplayAbilitySpecHandle> GrantAbilities(TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant);
+
+	UFUNCTION(BlueprintCallable, Category="Ability System")
+	void  RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
+
+	UFUNCTION(BlueprintCallable)
+	void SendAbilitiesChangedEvent();
 
 	/*
 	 * IAbilitySystemInterface
@@ -56,4 +66,8 @@ protected:
 	// we are using this variable to decide what type of Replication mode we are using. if player we use Mixed, if Enemy We use Minimal
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ability System")
 	EGameplayEffectReplicationMode AscReplicationMode = EGameplayEffectReplicationMode::Mixed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ability System")
+	TArray<TSubclassOf<UGameplayAbility>> StartupAbilities;
+	
 };
