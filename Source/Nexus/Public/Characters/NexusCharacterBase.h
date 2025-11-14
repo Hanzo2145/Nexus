@@ -35,8 +35,11 @@ public:
 	UFUNCTION(BlueprintCallable, Category="Ability System")
 	void  RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove);
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category="Ability System")
 	void SendAbilitiesChangedEvent();
+	
+	UFUNCTION(Server, Reliable, BlueprintCallable, Category="Ability System")
+	void Server_SendGameplayEventToSelf(FGameplayEventData EventData);
 
 	/*
 	 * IAbilitySystemInterface

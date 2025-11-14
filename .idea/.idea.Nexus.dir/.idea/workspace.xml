@@ -8,18 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53e87513-ba40-4f1c-a4dd-c9db9e1f0914" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/copilot.data.migration.edit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/VFX/EffectCues/NS_DamageBurst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/VFX/EffectCues/NS_DamageBurst.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequins/Meshes/SK_Mannequin.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequins/Meshes/SK_Mannequin.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayCues/DC_DamageBurst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayCues/DC_DamageBurst.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Axe.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Axe.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Staff.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Staff.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Base.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Weapons/WeaponManagerComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/WeaponManagerComponent.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/WBP_AbilitiesContainer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/WBP_AbilitiesContainer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/WBP_Ability.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/WBP_Ability.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Nexus/Nexus.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Nexus.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Data/DT_AbilityMetaData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Data/DT_AbilityMetaData.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Nexus/Private/Characters/NexusCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Private/Characters/NexusCharacterBase.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Nexus/Public/Characters/NexusCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Public/Characters/NexusCharacterBase.h" afterDir="false" />
     </list>
@@ -47,23 +46,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Uproject.Nexus.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Uproject.Nexus.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Nexus" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
@@ -151,7 +150,9 @@
       <workItem from="1758771188764" duration="3831000" />
       <workItem from="1759181372096" duration="3524000" />
       <workItem from="1761085957390" duration="260000" />
-      <workItem from="1761086238901" duration="5335000" />
+      <workItem from="1761086238901" duration="6119000" />
+      <workItem from="1763114404888" duration="339000" />
+      <workItem from="1763114770804" duration="581000" />
     </task>
     <servers />
   </component>
