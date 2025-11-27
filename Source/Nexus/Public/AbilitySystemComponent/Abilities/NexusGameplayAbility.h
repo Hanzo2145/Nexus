@@ -16,7 +16,7 @@ class NEXUS_API UNexusGameplayAbility : public UGameplayAbility
 
 
 public:
-
+    UNexusGameplayAbility();
 	/*
 	 * Variables Delcarations
 	 */
