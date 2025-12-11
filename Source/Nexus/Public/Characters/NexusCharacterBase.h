@@ -6,13 +6,14 @@
 #include "AbilitySystemComponent.h"
 #include "AbilitySystemInterface.h" // this header file is needed.
 #include "GameFramework/Character.h"
+#include "Interfaces/CharacterInterface.h"
 #include "NexusCharacterBase.generated.h"
 
 
 class UNexusAbilitySystemComponent;
 class UNexusAttributeSet; 
 UCLASS()
-class NEXUS_API ANexusCharacterBase : public ACharacter, public IAbilitySystemInterface //Make sure to include this interface
+class NEXUS_API ANexusCharacterBase : public ACharacter, public IAbilitySystemInterface, public ICharacterInterface//Make sure to include this interface
 {
 	GENERATED_BODY()
 
@@ -51,6 +52,14 @@ public:
 	 */
 
 	/*
+	 * ICharacterInterface
+	 */
+	virtual UAnimMontage* GetCharacterHitReactionMontage_Implementation() const override;
+	/*
+	 * ICharacterInterface
+	 */
+
+	/*
 	 * variables declarations
 	 */
 	// we are adding the ability System component to this character
@@ -60,8 +69,17 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= "Ability System")
 	TObjectPtr<UNexusAttributeSet> NexusAttributeSet;
 
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category= "Ability System")
+	TObjectPtr<UAnimMontage> HitReaction;
+
 protected:
 	virtual void BeginPlay() override;
+
+	virtual void OnDeadTagChanged(const FGameplayTag CallbackTag, int32 NewCount);
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Damage")
+	void HandleDeath();
 
 	/*
 	 * variables declarations

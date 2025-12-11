@@ -6,4 +6,5 @@
 UNexusGameplayAbility::UNexusGameplayAbility()
 {
 	ActivationOwnedTags.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Active")));
+	ActivationBlockedTags.AddTag(FGameplayTag::RequestGameplayTag(FName("State.Dead")));
 }

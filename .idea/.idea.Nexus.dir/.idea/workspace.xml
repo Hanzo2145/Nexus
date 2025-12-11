@@ -11,10 +11,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Staff.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Staff.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/WeaponManagerComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/WeaponManagerComponent.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Data/DT_AbilityMetaData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Data/DT_AbilityMetaData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/Enemies/BP_NexusEnemyBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/Enemies/BP_NexusEnemyBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageInstant/GE_DamageInstant.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageInstant/GE_DamageInstant.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageOverTime/GE_DamgeOverTime_Infinite.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageOverTime/GE_DamgeOverTime_Infinite.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_EquipWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_EquipWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_AxeSwing.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_AxeSwing.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Nexus/Private/AbilitySystemComponent/Abilities/NexusGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Private/AbilitySystemComponent/Abilities/NexusGameplayAbility.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Nexus/Private/AttributeSet/NexusAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Private/AttributeSet/NexusAttributeSet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Nexus/Private/Characters/NexusCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Private/Characters/NexusCharacterBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Nexus/Public/AttributeSet/NexusAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Public/AttributeSet/NexusAttributeSet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Nexus/Public/Characters/NexusCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Public/Characters/NexusCharacterBase.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,6 +155,8 @@
       <workItem from="1763197088189" duration="1441000" />
       <workItem from="1763801068208" duration="600000" />
       <workItem from="1764655190477" duration="1444000" />
+      <workItem from="1765360414698" duration="5845000" />
+      <workItem from="1765400712831" duration="2576000" />
     </task>
     <servers />
   </component>

@@ -49,7 +49,28 @@ ANexusCharacterBase::ANexusCharacterBase()
 void ANexusCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	AbilitySystemComponent->RegisterGameplayTagEvent(
+		FGameplayTag::RequestGameplayTag("State.Dead")).AddUObject(this, &ANexusCharacterBase::OnDeadTagChanged);
+}
+
+void ANexusCharacterBase::OnDeadTagChanged(const FGameplayTag CallbackTag, int32 NewCount)
+{
+	if (NewCount > 0)
+	{
+		HandleDeath();
+	}
+}
+
+void ANexusCharacterBase::HandleDeath_Implementation()
+{
+	GetMesh()->SetSimulatePhysics(true);
+	GetMesh()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	GetCharacterMovement()->DisableMovement();
+
+	FVector Impulse = GetActorForwardVector() * -20000;
+	Impulse.Z = 15000;
+	GetMesh()->AddImpulseAtLocation(Impulse, GetActorLocation());
 }
 
 // Called every frame
@@ -148,5 +169,10 @@ void ANexusCharacterBase::Server_SendGameplayEventToSelf_Implementation(FGamepla
 UAbilitySystemComponent* ANexusCharacterBase::GetAbilitySystemComponent() const
 {
 	return AbilitySystemComponent;
+}
+
+UAnimMontage* ANexusCharacterBase::GetCharacterHitReactionMontage_Implementation() const
+{
+	return HitReaction;
 }
 

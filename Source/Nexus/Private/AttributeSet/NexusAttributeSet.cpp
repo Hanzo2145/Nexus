@@ -58,10 +58,29 @@ void UNexusAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectM
 		//because Set Health will Call PreAttributeChange in which we are clamping the values
 		//NOTE: we can still do clamping it is just not necessary 
 		SetHealth(GetHealth());
+
+		if (Data.EffectSpec.Def->GetAssetTags().HasTag(FGameplayTag::RequestGameplayTag(FName("Effects.HitReaction"))))
+		{
+			FGameplayTagContainer HitReactionTag;
+			HitReactionTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.HitReaction")));
+			GetOwningAbilitySystemComponent()->TryActivateAbilitiesByTag(HitReactionTag);
+		}
 	}
 	else if (Data.EvaluatedData.Attribute == GetStaminaAttribute())
 	{
 		SetStamina(GetStamina());
+	}
+}
+
+void UNexusAttributeSet::PostAttributeChange(const FGameplayAttribute& Attribute, float OldValue, float NewValue)
+{
+	Super::PostAttributeChange(Attribute, OldValue, NewValue);
+
+	if (Attribute == GetHealthAttribute() && NewValue <= 0.f)
+	{
+		FGameplayTagContainer DeathAbilityTagContainer;
+		DeathAbilityTagContainer.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Death")));
+		GetOwningAbilitySystemComponent()->TryActivateAbilitiesByTag(DeathAbilityTagContainer);
 	}
 }
 
