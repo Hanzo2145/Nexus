@@ -23,4 +23,7 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "AbilitiesProperties")
 	bool bShouldShowInAbilitiesBar = false;
+
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Abilities")
+	bool HasPC() const;
 };
