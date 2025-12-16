@@ -9,17 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="53e87513-ba40-4f1c-a4dd-c9db9e1f0914" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AnimNotifies/ANState_HitScanWindow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AnimNotifies/ANState_HitScanWindow.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/Enemies/BP_NexusEnemyBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/Enemies/BP_NexusEnemyBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/LightingBolt_CD_Cost/GE_LightingBoltCost.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/LightingBolt_CD_Cost/GE_LightingBoltCost.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_AOE_Attack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_AOE_Attack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_AxeCombo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_AxeCombo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_ShootProjectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_ShootProjectile_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/AH/H7CHOL2EY4GC9MAAL0EUQR.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/AH/H7CHOL2EY4GC9MAAL0EUQR.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/F/4G/TYFCMQ9MC435YW6FZBF5FS.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/F/4G/TYFCMQ9MC435YW6FZBF5FS.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Nexus/Private/AbilitySystemComponent/Abilities/NexusGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Private/AbilitySystemComponent/Abilities/NexusGameplayAbility.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Nexus/Public/AbilitySystemComponent/Abilities/NexusGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Public/AbilitySystemComponent/Abilities/NexusGameplayAbility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Enemy/WBP_EnemyWIdget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Enemy/WBP_EnemyWIdget.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +146,8 @@
       <workItem from="1764655190477" duration="1444000" />
       <workItem from="1765360414698" duration="5845000" />
       <workItem from="1765400712831" duration="2576000" />
-      <workItem from="1765829953308" duration="1458000" />
+      <workItem from="1765829953308" duration="2057000" />
+      <workItem from="1765918759755" duration="919000" />
     </task>
     <servers />
   </component>
