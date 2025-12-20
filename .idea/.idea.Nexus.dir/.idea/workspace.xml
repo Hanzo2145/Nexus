@@ -9,7 +9,13 @@
   <component name="ChangeListManager">
     <list default="true" id="53e87513-ba40-4f1c-a4dd-c9db9e1f0914" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Enemy/WBP_EnemyWIdget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Enemy/WBP_EnemyWIdget.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/Enemies/BP_NexusEnemyBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/Enemies/BP_NexusEnemyBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageInstant/GE_DamageInstant.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageInstant/GE_DamageInstant.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageOverTime/GE_DamgeOverTime_Infinite.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageOverTime/GE_DamgeOverTime_Infinite.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Staff.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Staff.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Nexus/Private/AttributeSet/NexusAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Private/AttributeSet/NexusAttributeSet.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +154,7 @@
       <workItem from="1765400712831" duration="2576000" />
       <workItem from="1765829953308" duration="2057000" />
       <workItem from="1765918759755" duration="919000" />
+      <workItem from="1766243175074" duration="1782000" />
     </task>
     <servers />
   </component>

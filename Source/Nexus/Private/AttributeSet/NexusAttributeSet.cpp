@@ -59,7 +59,8 @@ void UNexusAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectM
 		//NOTE: we can still do clamping it is just not necessary 
 		SetHealth(GetHealth());
 
-		if (Data.EffectSpec.Def->GetAssetTags().HasTag(FGameplayTag::RequestGameplayTag(FName("Effects.HitReaction"))))
+		if (Data.EffectSpec.Def->GetAssetTags().HasTag(FGameplayTag::RequestGameplayTag(FName("Effects.HitReaction")))
+			&& Data.EvaluatedData.Magnitude != 0.f)
 		{
 			FGameplayTagContainer HitReactionTag;
 			HitReactionTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.HitReaction")));
