@@ -58,10 +58,23 @@ public:
 	FGameplayAttributeData MaxStamina;
 	ATTRIBUTE_ACCESSORS(UNexusAttributeSet, MaxStamina);
 
+	UPROPERTY(BlueprintReadWrite, Category="Attributes")
+	FGameplayAttributeData Damage;
+	ATTRIBUTE_ACCESSORS(UNexusAttributeSet, Damage);
+
+	UPROPERTY(ReplicatedUsing = OnRep_Shield, BlueprintReadWrite, Category="Attributes")
+	FGameplayAttributeData Shield;
+	ATTRIBUTE_ACCESSORS(UNexusAttributeSet, Shield);   // see macro below
+
+	UPROPERTY(ReplicatedUsing = OnRep_MaxShield, BlueprintReadWrite, Category="Attributes")
+	FGameplayAttributeData MaxShield;
+	ATTRIBUTE_ACCESSORS(UNexusAttributeSet, MaxShield);
+
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 	//Applies Changes whenever an Attributes is chanaged manually not by and effect
 	virtual void PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue) override;
+	void PlayHitReaction(const FGameplayEffectModCallbackData& Data);
 
 	//this function is called after a game play effect is applied 
 	virtual void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data) override;
@@ -74,5 +87,7 @@ public:
 	UFUNCTION() void OnRep_MaxHealth(const FGameplayAttributeData& OldValue);
 	UFUNCTION() void OnRep_Stamina(const FGameplayAttributeData& OldValue);
 	UFUNCTION() void OnRep_MaxStamina(const FGameplayAttributeData& OldValue);
+	UFUNCTION() void OnRep_Shield(const FGameplayAttributeData& OldValue);
+	UFUNCTION() void OnRep_MaxShield(const FGameplayAttributeData& OldValue);
 };
 

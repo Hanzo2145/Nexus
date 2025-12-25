@@ -11,6 +11,9 @@ UNexusAttributeSet::UNexusAttributeSet()
 	MaxHealth = 100.f;
 	Stamina = 100.f;
 	MaxStamina = 100.f;
+	Damage = 0.f;
+	Shield = 0.f;
+	MaxShield = 100.f;
 	
 }
 
@@ -46,11 +49,50 @@ void UNexusAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute,
 	{
 		NewValue = FMath::Clamp(NewValue, 0, GetMaxStamina());
 	}
+	else if (Attribute == GetShieldAttribute())
+	{
+		NewValue = FMath::Clamp(NewValue, 0, GetMaxShield());
+	}
+}
+
+void UNexusAttributeSet::PlayHitReaction(const FGameplayEffectModCallbackData& Data)
+{
+	if (Data.EffectSpec.Def->GetAssetTags().HasTag(FGameplayTag::RequestGameplayTag(FName("Effects.HitReaction")))
+		&& Data.EvaluatedData.Magnitude != 0.f)
+	{
+		FGameplayTagContainer HitReactionTag;
+		HitReactionTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.HitReaction")));
+		GetOwningAbilitySystemComponent()->TryActivateAbilitiesByTag(HitReactionTag);
+	}
 }
 
 void UNexusAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data)
 {
 	Super::PostGameplayEffectExecute(Data);
+
+	if (Data.EvaluatedData.Attribute == GetDamageAttribute())
+	{
+		float TotalDamage = GetDamage();
+		SetDamage(0.f);
+
+		float CurrentShield = GetShield();
+		if (CurrentShield > 0.f)
+		{
+			SetShield(CurrentShield - TotalDamage);
+			float RemainingDamage = TotalDamage - CurrentShield;
+
+			if (RemainingDamage > 0.f)
+			{
+				SetHealth( GetHealth() - RemainingDamage );
+				PlayHitReaction(Data);
+			}
+		}
+		else
+		{
+			SetHealth(GetHealth() - TotalDamage);
+			PlayHitReaction(Data);
+		}
+	}
 
 	if (Data.EvaluatedData.Attribute == GetHealthAttribute())
 	{
@@ -58,14 +100,6 @@ void UNexusAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectM
 		//because Set Health will Call PreAttributeChange in which we are clamping the values
 		//NOTE: we can still do clamping it is just not necessary 
 		SetHealth(GetHealth());
-
-		if (Data.EffectSpec.Def->GetAssetTags().HasTag(FGameplayTag::RequestGameplayTag(FName("Effects.HitReaction")))
-			&& Data.EvaluatedData.Magnitude != 0.f)
-		{
-			FGameplayTagContainer HitReactionTag;
-			HitReactionTag.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.HitReaction")));
-			GetOwningAbilitySystemComponent()->TryActivateAbilitiesByTag(HitReactionTag);
-		}
 	}
 	else if (Data.EvaluatedData.Attribute == GetStaminaAttribute())
 	{
@@ -82,6 +116,18 @@ void UNexusAttributeSet::PostAttributeChange(const FGameplayAttribute& Attribute
 		FGameplayTagContainer DeathAbilityTagContainer;
 		DeathAbilityTagContainer.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Death")));
 		GetOwningAbilitySystemComponent()->TryActivateAbilitiesByTag(DeathAbilityTagContainer);
+	}
+	if (Attribute == GetShieldAttribute())
+	{
+		if (NewValue > 0.f && OldValue <= 0.f)
+		{
+			GetOwningAbilitySystemComponent()->AddGameplayCue(FGameplayTag::RequestGameplayTag(FName("GameplayCue.ShieldUp")));
+		}
+		else if (NewValue <= 0.f && OldValue > 0.f)
+		{
+			GetOwningAbilitySystemComponent()->RemoveGameplayCue(FGameplayTag::RequestGameplayTag(FName("GameplayCue.ShieldUp")));
+			GetOwningAbilitySystemComponent()->ExecuteGameplayCue(FGameplayTag::RequestGameplayTag(FName("GameplayCue.ShieldDown")));
+		}
 	}
 }
 
@@ -111,4 +157,12 @@ void UNexusAttributeSet::OnRep_MaxStamina(const FGameplayAttributeData& OldValue
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UNexusAttributeSet, MaxStamina, OldValue);
 }
 
+void UNexusAttributeSet::OnRep_Shield(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UNexusAttributeSet, Shield, OldValue);
+}
 
+void UNexusAttributeSet::OnRep_MaxShield(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UNexusAttributeSet, MaxShield, OldValue);
+}
