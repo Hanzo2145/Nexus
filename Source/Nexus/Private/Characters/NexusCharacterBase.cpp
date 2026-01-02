@@ -7,6 +7,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystemComponent/NexusAbilitySystemComponent.h"
+#include "AttributeSet/CombatAttributeSet.h"
 
 // Sets default values
 ANexusCharacterBase::ANexusCharacterBase()
@@ -19,8 +20,9 @@ ANexusCharacterBase::ANexusCharacterBase()
 	AbilitySystemComponent->SetIsReplicated(true);
 	AbilitySystemComponent->SetReplicationMode(AscReplicationMode);
 
-	//Add Nexus Attribute Set
+	//Add Attribute Sets
 	NexusAttributeSet = CreateDefaultSubobject<UNexusAttributeSet>("NexusAttributeSet");
+	CombatAttributesSet = CreateDefaultSubobject<UCombatAttributeSet>("CombatAttributesSet");
 	
 
 	//Set Size for collision capsule

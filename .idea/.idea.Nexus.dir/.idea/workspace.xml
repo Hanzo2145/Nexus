@@ -10,23 +10,15 @@
     <list default="true" id="53e87513-ba40-4f1c-a4dd-c9db9e1f0914" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/Enemies/BP_NexusEnemyBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/Enemies/BP_NexusEnemyBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Damage.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Damage.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageInstant/GE_DamageInstant.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageInstant/GE_DamageInstant.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageOverTime/GE_DamgeOverTime_Infinite.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageOverTime/GE_DamgeOverTime_Infinite.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Heal.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Heal.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/CustomCal/DamageCalMod.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/CustomCal/DamageCalMod.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_AOE_Attack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_AOE_Attack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_AxeCombo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_AxeCombo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_ShootProjectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_ShootProjectile_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Axe.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Axe.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/AbiltiyData/DT_AbilityMetaData.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/AbiltiyData/S_AbilityMetaData.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Data/DT_AbilityMetaData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Data/DT_AbilityMetaData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Enemy/WBP_EnemyArmor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Enemy/WBP_EnemyArmor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Enemy/WBP_EnemyWIdget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Enemy/WBP_EnemyWIdget.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Nexus/Private/AttributeSet/NexusAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Private/AttributeSet/NexusAttributeSet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/BP_Projectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/BP_Projectile_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Nexus/Private/Characters/NexusCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Private/Characters/NexusCharacterBase.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Nexus/Public/AttributeSet/NexusAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Public/AttributeSet/NexusAttributeSet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Nexus/Public/Characters/NexusCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Public/Characters/NexusCharacterBase.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +159,7 @@
       <workItem from="1765918759755" duration="919000" />
       <workItem from="1766243175074" duration="1782000" />
       <workItem from="1766682826696" duration="5266000" />
+      <workItem from="1767370919032" duration="2583000" />
     </task>
     <servers />
   </component>

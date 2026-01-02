@@ -71,10 +71,9 @@ public:
 	ATTRIBUTE_ACCESSORS(UNexusAttributeSet, MaxShield);
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
+	void PlayHitReaction(const FGameplayEffectModCallbackData& Data);
 	//Applies Changes whenever an Attributes is chanaged manually not by and effect
 	virtual void PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue) override;
-	void PlayHitReaction(const FGameplayEffectModCallbackData& Data);
 
 	//this function is called after a game play effect is applied 
 	virtual void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data) override;

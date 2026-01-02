@@ -10,6 +10,7 @@
 #include "NexusCharacterBase.generated.h"
 
 
+class UCombatAttributeSet;
 class UNexusAbilitySystemComponent;
 class UNexusAttributeSet; 
 UCLASS()
@@ -69,6 +70,8 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= "Ability System")
 	TObjectPtr<UNexusAttributeSet> NexusAttributeSet;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= "Ability System")
+	TObjectPtr<UCombatAttributeSet> CombatAttributesSet;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category= "Ability System")
 	TObjectPtr<UAnimMontage> HitReaction;
