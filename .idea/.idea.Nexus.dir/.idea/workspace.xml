@@ -8,17 +8,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53e87513-ba40-4f1c-a4dd-c9db9e1f0914" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nexus.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Heal.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Heal.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/CustomCal/DamageCalMod.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/CustomCal/DamageCalMod.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AnimNotifies/ANState_HitScanWindow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AnimNotifies/ANState_HitScanWindow.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_NexusPlayer.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_AOE_Attack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_AOE_Attack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Projectiles/BP_Projectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/BP_Projectile_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_Dash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_Dash.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_FillShield.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_FillShield.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_AxeCombo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_AxeCombo.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_AxeSwing.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_MeleeAttack_AxeSwing.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_Shield.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_Shield.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_ShootProjectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/GameplayAbilities/GA_ShootProjectile_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/Actions/IA_AOE_Attack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/Actions/IA_AbilityDash.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/Actions/IA_MeleeAttack_AxeCombo.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/Actions/IA_Staff_MeleeAttack_SingleSwing.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/Actions/IA_Staff_ShootProjectile.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Nexus/Private/Characters/NexusCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Private/Characters/NexusCharacterBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Nexus/Public/AttributeSet/NexusAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Public/AttributeSet/NexusAttributeSet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Nexus/Public/Characters/NexusCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Public/Characters/NexusCharacterBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Nexus/Public/AbilitySystemComponent/Abilities/NexusGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Nexus/Public/AbilitySystemComponent/Abilities/NexusGameplayAbility.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +167,7 @@
       <workItem from="1766243175074" duration="1782000" />
       <workItem from="1766682826696" duration="5266000" />
       <workItem from="1767370919032" duration="2583000" />
+      <workItem from="1768313443529" duration="3692000" />
     </task>
     <servers />
   </component>

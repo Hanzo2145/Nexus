@@ -7,6 +7,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystemComponent/NexusAbilitySystemComponent.h"
+#include "AbilitySystemComponent/Abilities/NexusGameplayAbility.h"
 #include "AttributeSet/CombatAttributeSet.h"
 
 // Sets default values
@@ -124,9 +125,14 @@ TArray<FGameplayAbilitySpecHandle> ANexusCharacterBase::GrantAbilities(TArray<TS
 	
 	for (TSubclassOf<UGameplayAbility> Ability : AbilitiesToGrant)
 	{
+		int32 InputID = -1;
+		if (const UNexusGameplayAbility* NexusAbilityCDO = GetDefault<UNexusGameplayAbility>(Ability))
+		{
+			InputID = static_cast<int32>(NexusAbilityCDO->AbilityInputID);
+		}
 		//first loop over all the abilities we give this function and grant them one by one.
 		FGameplayAbilitySpecHandle SpecHandle = AbilitySystemComponent->GiveAbility(FGameplayAbilitySpec(
-			Ability, 1, -1, this));
+			Ability, 1, InputID, this));
 
 		AbilityHandles.Add(SpecHandle);
 	}
